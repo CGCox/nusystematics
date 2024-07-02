@@ -1,0 +1,8 @@
+  BYPara_toolconfig: {
+    tool_type: "BYPara"
+    instance_name: "BodekYangParameters"
+
+    alldial_variation_descriptor: "(-5,5,1)"
+    verbosity_level: 5
+  }
+syst_providers: [BYPara_toolconfig]
