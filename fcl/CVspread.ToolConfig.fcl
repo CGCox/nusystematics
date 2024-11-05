@@ -1,0 +1,9 @@
+CVspread_toolconfig: {
+	tool_type: "CVspread"
+	instance_name: "CentralValueSpreadFromGENIE"
+
+	CVspread_variation_descriptor: "(0,1,1)"
+	verbosity_level: 5
+}
+
+syst_providers: [CVspread_toolconfig]

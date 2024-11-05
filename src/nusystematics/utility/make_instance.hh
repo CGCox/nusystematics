@@ -16,6 +16,7 @@
 #include "nusystematics/systproviders/ResIso_tool.hh"
 #include "nusystematics/systproviders/DIRT2_Emiss_tool.hh"
 #include "nusystematics/systproviders/BYPara_tool.hh"
+#include "nusystematics/systproviders/CVspread_tool.hh"
 
 #include "fhiclcpp/ParameterSet.h"
 
@@ -57,6 +58,8 @@ make_instance(fhicl::ParameterSet const &paramset) {
     return std::make_unique<ResIso>(paramset);
   } else if (tool_type == "BYPara") {
     return std::make_unique<BYPara>(paramset);
+  } else if (tool_type == "CVspread") {
+    return std::make_unique<CVspread>(paramset);
   } else {
     throw unknown_nusyst_systprovider()
         << "[ERROR]: Unknown tool type: " << std::quoted(tool_type);

@@ -9,6 +9,7 @@ SET(SYSTP_IMPLFILES
   MiscInteractionSysts_tool.cc
   NOvAStyleNonResPionNorm_tool.cc
   DIRT2_Emiss_tool.cc
+  CVspread_tool.cc
   )
 
 if(GENIEReWeight_ENABLED)
@@ -32,6 +33,7 @@ SET(SYSTP_HDRFILES
   MiscInteractionSysts_tool.hh
   NOvAStyleNonResPionNorm_tool.hh
   DIRT2_Emiss_tool.hh
+  CVspread_tool.hh
 )
 
 if(GENIEReWeight_ENABLED)
