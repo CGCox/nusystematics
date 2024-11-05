@@ -210,7 +210,7 @@ event_unit_response_t CVspread::GetEventResponse(genie::EventRecord const &ev){
       resp.back().responses.push_back(REFweight);
       if (verbosity_level > 3) {
         std::cout << "[DEBG]: For parameter " << md[pidx_Params[i]].prettyName
-                  << " at variation[" << v_it << "] = " << Variations[i][v_it]
+                  << " at variation[" << tweak << "] = " << Variations[i][tweak]
                   << " calculated weight: " << resp.back().responses.back()
                   << std::endl;
       }
