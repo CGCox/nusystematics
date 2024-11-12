@@ -35,8 +35,6 @@ public:
   //   parameter headers.
   fhicl::ParameterSet GetExtraToolOptions() { return tool_options; }
 
-  systtools::SystMetaData BuildSystMetaData(fhicl::ParameterSet const &, systtools::paramId_t);
-
   // Parameter-specific implementation goes in here
   systtools::event_unit_response_t GetEventResponse(genie::EventRecord const &);
 

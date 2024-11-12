@@ -66,6 +66,9 @@ SystMetaData BuildSystMetaData(fhicl::ParameterSet const &ps,
     smd.push_back(phdr);
   }
 
+  //Does not like being defined in .hh
+  fhicl::ParameterSet tool_options;
+
   // Put any options that you want to propagate to the ParamHeaders options
   tool_options.put("verbosity_level", ps.get<int>("verbosity_level", 0));
 
@@ -79,6 +82,9 @@ bool CVspread::SetupResponseCalculator(
 
   // grab the pre-parsed param headers object
   SystMetaData const &md = GetSystMetaData();
+
+//Does not like being defined in the .hh
+    std::vector<DialInfo> dial_infos;
 
   for (size_t i = 0; i < dial_infos.size(); ++i) {
 
